@@ -15,8 +15,14 @@ public class HelloController {
     @Autowired
     HelloService helloService;
 
+    @GetMapping("/t")
+    public String t(){
+        return "ccc";
+    }
+
     @GetMapping("/hi")
     public String hi(@RequestParam String name){
+        System.out.println("zzd");
         return helloService.hiService(name);
     }
 }
