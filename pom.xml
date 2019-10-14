@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>service-ribbon</name>e
+    <name>service-ribbon</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -28,6 +28,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
 
         <dependency>
@@ -71,7 +75,6 @@
         </dependencies>
     </dependencyManagement>
 
-
     <build>
         <plugins>
             <plugin>
@@ -92,6 +95,5 @@
         </repository>
     </repositories>
 
+
 </project>
-
-
