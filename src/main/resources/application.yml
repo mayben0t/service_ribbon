@@ -8,3 +8,11 @@ server:
 spring:
   application:
     name: service-ribbon
+#feign:
+#  client:
+#    config:
+#      remote-service: service-hi           #服务名，default为所有服务
+#        connectTimeout: 10000
+#        readTimeout: 12000
+#  hystrix:
+#    enabled: true             #启用hystrix
